@@ -9,7 +9,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DbConnectSample03 {
+public class DbConnectSample04 {
 
     public static void main(String[] args) {
         
