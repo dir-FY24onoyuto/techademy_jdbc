@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class DbConnectSample022 {
+public class DbConnectSample03 {
 
     public static void main(String[] args) {
         
@@ -45,7 +45,13 @@ public class DbConnectSample022 {
                 //取得した値を表示
                 System.out.println(name);
             }
+        
+            //6-1.データの更新を行う
+            sql = "update country set Population = 105000 where Code = 'ABW'";
+            int count = stmt.executeUpdate(sql);
+            System.out.println(count);
       
+            
         } catch (ClassNotFoundException e) {
             System.err.println("JDBCドライバーのロードに失敗しました。");
             e.printStackTrace(); 
